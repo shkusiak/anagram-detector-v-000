@@ -6,9 +6,16 @@ class Anagram
     @name = name
   end
 
-  def match(anagrams_array)
+  def match(potential_anagrams)
     name = name.to_s.split("")
     name = %w(name).sort
+    positive_anagrams = []
+    potential_anagrams.each do |word|
+      if word.sort == name
+        positive_anagrams << word
+      end
+    end
+    positive_anagrams
   end
 
 end
