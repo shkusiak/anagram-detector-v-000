@@ -2,7 +2,7 @@
 class Anagram
   attr_accessor :names
 
-  def initialize
+  def initialize(names)
     @names = names
   end
 
