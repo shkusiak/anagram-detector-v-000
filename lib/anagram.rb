@@ -11,7 +11,7 @@ class Anagram
     name = %w(name).sort
     positive_anagrams = []
     potential_anagrams.each do |word|
-      if word.sort == name
+      if %w(word).sort == name
         positive_anagrams << word
       end
     end
