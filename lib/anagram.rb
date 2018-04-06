@@ -1,13 +1,13 @@
 # Your code goes here!
 class Anagram
-  attr_accessor :names
+  attr_accessor :name
 
-  def initialize(names)
-    @names = names
+  def initialize(name)
+    @name = name
   end
 
   def match(anagrams_array)
-    names = names.split("")
+    name = name.to_s.split("")
   end
 
 end
