@@ -8,7 +8,7 @@ class Anagram
 
   def match(anagrams_array)
     name = name.to_s.split("")
-    name = w%(name).sort
+    name = %w(name).sort
   end
 
 end
