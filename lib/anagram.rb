@@ -9,7 +9,7 @@ class Anagram
   def match(potential_anagrams)
     name = name.to_s.split("")
     name = %w(name).sort
-        potential_anagrams.each do |word|
+      potential_anagrams.each do |word|
       if %w(word).sort == name
         positive_anagrams << word
       end
